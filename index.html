@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
     <title>Mi Billetera App</title>
 </head>
 <body>
+    <header>
+        <h1>Mi Billetera App</h1>
+        <h2>Dinero disponible</h2>
+        <form>
+        <input type="number" placeholder="Dinero disponible" id="dineroInicial"/>
+        <input type="button"  value="Ingresar dinero"/>
+        </form>
+
+        <div id="divGastos">
+            <div class="one-half column">
+                <form action="">
+                    <h2>Ingrese sus gastos</h2>
+                    <div>
+                        <label>Nombre del Gasto</label>
+                        <input type="text" placeholder="Ej. Bicicleta" id="tipoGasto"/>
+                    </div>
+                    <div>
+                        <label class="campo">Monto</label>
+                        <input type="number" placeholder="Ej. 300" id="cantidadGasto"/>
+                    </div>
+                    <input type="button" value="Agregar Gasto"/>
+                </form>
+            </div>
+            <div class="one-half column" id="divListadoGastos">
+
+            </div>
+        </div>
+    </header>
     
 </body>
 </html>
